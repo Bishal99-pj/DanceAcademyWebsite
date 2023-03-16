@@ -1,0 +1,43 @@
+extends base.pug
+
+block scripts 
+    script(src='/static/index.js')
+
+block style
+    style 
+        include ../static/style.css
+
+block content  
+        section#introSection 
+            div  Welcome to Bishal's Dance Academy 
+            div.small  Express to Impress  :)
+        section#missionSection
+            h3  Our Motto 
+            div.card
+                h3  Dance perfection 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/1.png")
+                    div.card-content
+                        p Hello Dancers! Follow your passion and dream.
+            div.card
+                h3  Dance as you Like!! 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/2.png")
+                    div.card-content
+                        p Free-form , Hip-Hop , Quick-Style , Classical 
+            div.card
+                h3  Meet Our Experts 
+                div.card-box
+                    div.card-img
+                        img(src="/static/img/3.png")
+                    div.card-content
+                        p Meet Beena Ma'am , James Sir , Geetha Maa & more
+        section#sponsorSection
+            h2  Our sponsors 
+            div#sponsors
+                img(src="/static/img/sponsor1.png", alt="sponsor img1" , Class="spimg")
+                img(src="/static/img/sponsor2.png", alt="sponsor img2" , Class="spimg")
+                img(src="/static/img/sponsor3.png", alt="sponsor img3", Class="spimg")
+                img(src="/static/img/sponsor4.png", alt="sponsor img4" , Class="spimg")
