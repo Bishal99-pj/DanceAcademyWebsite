@@ -1,0 +1,13 @@
+cls
+git config --global user.email""
+git config --global user.name ""
+touch .gitignore  // add node modules/
+git init
+git add .
+git commit -m "Initial Commit"
+git status
+
+ssh-keygen -t rsa -b 4096 -C "email"
+cat <path to id_rsa.pub>
+git remote add origin <ssh url.git>
+git push origin master
